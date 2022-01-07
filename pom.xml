@@ -18,7 +18,7 @@
     </properties>
 
     <modules>
-        <module>kafka-scheduler-synthetic-app</module>
+        <module>kafka-scheduler-service</module>
         <module>kafka-scheduler-starter</module>
     </modules>
 
