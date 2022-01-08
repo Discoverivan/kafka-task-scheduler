@@ -12,7 +12,7 @@
 
 В секции `dependencies` вашего `pom.xml` файла укажите:
 
-```
+```xml
 <dependency>
     <groupId>ru.discoverivan.scheduler</groupId>
     <artifactId>kafka-task-scheduler-starter</artifactId>
