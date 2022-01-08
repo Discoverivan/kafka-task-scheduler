@@ -105,6 +105,17 @@ public class MyScheduledTaskExecutor implements ScheduledTaskExecutor<String, Sc
 ```
 
 ## Поднятие Docker-образа Kafka для целей разработки
+### Использование готового образа
+#### Для скачивания образа выполнить команду:
+```shell
+docker pull ghcr.io/discoverivan/kafka:latest
+```
+#### Для запуска образа выполнить команду:
+```shell
+docker run -d -p 2181:2181 -p 9092:9092 ghcr.io/discoverivan/kafka:latest
+```
+
+### Самостоятельная сборка образа
 В репозитории есть папка `dev-environment/kafka`. 
 #### Для сборки образа выполнить команду:
 ```shell
