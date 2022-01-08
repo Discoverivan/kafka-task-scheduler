@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.discoverivan.scheduler</groupId>
-    <artifactId>kafka-scheduler</artifactId>
+    <artifactId>kafka-task-scheduler</artifactId>
     <packaging>pom</packaging>
     <version>0.1.0</version>
 
@@ -18,8 +18,8 @@
     </properties>
 
     <modules>
-        <module>kafka-scheduler-service</module>
-        <module>kafka-scheduler-starter</module>
+        <module>kafka-task-scheduler-service</module>
+        <module>kafka-task-scheduler-starter</module>
     </modules>
 
     <dependencyManagement>
