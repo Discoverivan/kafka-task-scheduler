@@ -11,3 +11,6 @@ RUN cd ~/kafka/bin && \
 COPY run.sh /root
 CMD sh ~/run.sh
 
+EXPOSE 9092
+EXPOSE 2181
+
