@@ -1,0 +1,19 @@
+name: Docker Kafka Image CI
+
+on: release
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Docker Login
+        run:  echo "${{ secrets.GITHUB_TOKEN }}" | docker login https://ghcr.io -u ${GITHUB_ACTOR} --password-stdin
+      - name: Build Docker image
+        working-directory: dev-environment/kafka
+        run: docker build . -t ghcr.io/discoverivan/kafka:latest
+      - name: Push Docker image
+        run: docker push ghcr.io/discoverivan/kafka:latest
