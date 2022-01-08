@@ -1,6 +1,6 @@
 name: Docker Kafka Image CI
 
-on: release
+on: workflow_dispatch
 
 jobs:
 
