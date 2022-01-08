@@ -2,9 +2,9 @@
 
 ## Состав репозитория
 
-1. Kafka Task Scheduler Starter - стартер Spring Boot, который автоматически поднимает бин TaskSchedulerService
-2. Kafka Task Scheduler Service - приложение, которое используется для демонстрации работы стартера
-3. Kafka Docker - конфигурация для сборки образа Docker, в котором поднимается Kafka. Используется для целей разработки.
+1. **Kafka Task Scheduler Starter** - стартер Spring Boot, который автоматически поднимает бин TaskSchedulerService
+2. **Kafka Task Scheduler Service** - приложение, которое используется для демонстрации работы стартера
+3. **Kafka Docker** - конфигурация для сборки образа Docker, в котором поднимается Kafka. Используется для целей разработки.
 
 ## Инструкция по использованию
 
