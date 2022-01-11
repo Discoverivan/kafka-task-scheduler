@@ -1,0 +1,24 @@
+discoverivan.task-scheduler.kafka:
+  topics:
+    - name: APP.SCHEDULER.EXECUTION
+      delay: 0
+    - name: APP.SCHEDULER.3SEC
+      delay: 3s
+    - name: APP.SCHEDULER.6SEC
+      delay: 6s
+    - name: APP.SCHEDULER.10SEC
+      delay: 10s
+  connection:
+    producer:
+      "[bootstrap.servers]": localhost:9092
+    consumer:
+      "[bootstrap.servers]": localhost:9092
+      "[auto.offset.reset]": "earliest"
+
+logging:
+  level:
+    root: INFO
+    org.apache: ERROR
+    org.springframework.kafka: ERROR
+    kafka: ERROR
+    state: ERROR

@@ -18,5 +18,11 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
         cache: maven
-    - name: Maven Verify
-      run: mvn -B verify
+    - name: Maven Compile
+      run: mvn -B clean compile
+    - name: Docker Login
+      run:  echo "${{ secrets.GITHUB_TOKEN }}" | docker login https://ghcr.io -u ${GITHUB_ACTOR} --password-stdin
+    - name: Run Kafka Docker
+      run: docker run -d -p 2181:2181 -p 9092:9092 ghcr.io/discoverivan/kafka:latest
+    - name: Maven Test
+      run: mvn -B clean verify
